@@ -1,0 +1,123 @@
+.footer {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #0c2f33;
+
+  @media (min-width: 1200px) {
+    padding: 65px 0;
+  }
+
+  &__list-wrapper {
+    width: 400px;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+
+    &--ml10 {
+      margin-left: 24px;
+    }
+  }
+  &__container {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    margin-bottom: 21px;
+    font-size: 22px;
+    line-height: 27px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    list-style-type: none;
+    columns: 2;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    margin-bottom: 17px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #ffffff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__contacts {
+    @media (min-width: 1200px) {
+      display: block;
+      margin-left: 56px;
+      margin-right: 24px;
+    }
+  }
+
+  &__contacts-work-time {
+    padding-left: 13px;
+    margin-bottom: 11px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    background-image: url('../../assets/images/clock.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+
+    span {
+      color: #4c858b;
+      margin-right: 5px;
+      margin-left: 10px;
+    }
+  }
+  &__contacts-address {
+    padding-left: 13px;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    background-image: url('../../assets/images/place.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+
+    span {
+      margin-left: 9px;
+      margin-right: 5px;
+      font-family: Lato, sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

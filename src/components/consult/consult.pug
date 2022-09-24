@@ -1,0 +1,23 @@
+block variables 
+  - var mobile = 'Оставить заявку'
+  - var desktop = 'Отправить'
+section.consult.container
+  h2.title.title--consult-title необходима консультация?
+  p.subtitle.subtitle--subtitle-consult оставьте заявку или свяжитесь с нами в социальных сетях
+  
+  div.wrapper
+   include ../../views/helpers/mixins
+   +socialIcons("social-icons--width",'social-icons__link--mr',"orange","show")
+
+   
+  form.form(action="/") 
+   h4.form__title Для <span>консультации</span> заполните форму!
+   p.form__subtitle <span class="show-desktop">С</span ><span class="show-mobile">И с</span> Вами свяжутся в ближайшее время
+   div.form__input-wrapper
+    input.form__input(type="text" placeholder="Ваше имя")
+    input.form__input(type="text" placeholder="Ваш телефон")
+    include ../../views/helpers/mixins
+    div.show-mobile 
+     +formButton(mobile)
+    div.show-desktop
+     +formButton(desktop)

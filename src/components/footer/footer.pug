@@ -1,0 +1,30 @@
+block variables
+
+footer.footer
+  div.footer__container
+   div.footer__list-wrapper
+    h3.footer__title Каталог
+    ul.footer__list 
+     for i in catalog
+       li.footer__item 
+         a(href=i.link).footer__link=i.name 
+ 
+   div.footer__list-wrapper.footer__list-wrapper--ml10
+    h3.footer__title Информация
+    ul.footer__list
+      for i in info
+       li.footer__item 
+         a(href=i.link).footer__link=i.name 
+
+   div.footer__contacts
+     h3.footer__title Время работы
+     div.footer__contacts-work-time <span>пн-пт</span>9:00 – 20:00  <span>сб-вс</span> 10:00 – 18:00
+     div.footer__contacts-address <span>г.  Санкт - Петербург</span> ,ул. Тамбасова д.7
+     
+     include ../../views/helpers/mixins
+     +socialIcons('social-icons--pd-top','social-icons__link--mr')
+    
+
+        
+  
+     
